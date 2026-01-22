@@ -37,6 +37,31 @@
       "import": "./dist/configs/index.js",
       "require": "./dist/configs/index.cjs"
     },
+    "./aggrid": {
+      "types": "./dist/aggrid/index.d.ts",
+      "import": "./dist/aggrid/index.js",
+      "require": "./dist/aggrid/index.cjs"
+    },
+    "./calendar": {
+      "types": "./dist/calendar/index.d.ts",
+      "import": "./dist/calendar/index.js",
+      "require": "./dist/calendar/index.cjs"
+    },
+    "./timeline": {
+      "types": "./dist/timeline/index.d.ts",
+      "import": "./dist/timeline/index.js",
+      "require": "./dist/timeline/index.cjs"
+    },
+    "./chart": {
+      "types": "./dist/chart/index.d.ts",
+      "import": "./dist/chart/index.js",
+      "require": "./dist/chart/index.cjs"
+    },
+    "./modal": {
+      "types": "./dist/modal/index.d.ts",
+      "import": "./dist/modal/index.js",
+      "require": "./dist/modal/index.cjs"
+    },
     "./package.json": "./package.json"
   },
   "scripts": {
@@ -47,23 +72,43 @@
   "peerDependencies": {
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
+    "@fullcalendar/core": "^6.1.0",
+    "@fullcalendar/daygrid": "^6.1.0",
+    "@fullcalendar/react": "^6.1.0",
     "@mui/material": "^5.15.0 || ^6.0.0 || ^7.0.0",
+    "ag-grid-community": "^35.0.0",
+    "ag-grid-enterprise": "^35.0.0",
+    "ag-grid-react": "^35.0.0",
     "axios": "^1.7.4",
+    "dayjs": "^1.11.0",
+    "interactjs": "1.10.27",
     "react": "^18.2.0",
+    "react-calendar-timeline": "^0.30.0-beta.5",
     "react-dom": "^18.2.0",
     "react-toastify": "^10.0.6",
+    "recharts": "^2.12.0",
     "zustand": "^4.5.4"
   },
   "devDependencies": {
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
-    "@mui/material": "^7.2.0",
-    "axios": "^1.7.4",
+    "@fullcalendar/core": "^6.1.15",
+    "@fullcalendar/daygrid": "^6.1.15",
+    "@fullcalendar/react": "^6.1.15",
+    "@mui/material": "^7.3.7",
+    "@types/node": "^25.0.10",
     "@types/react": "^18.3.11",
     "@types/react-dom": "^18.3.0",
+    "ag-grid-community": "^35.0.0",
+    "ag-grid-enterprise": "^35.0.0",
+    "ag-grid-react": "^35.0.0",
+    "axios": "^1.7.4",
+    "dayjs": "^1.11.13",
     "react": "^18.3.1",
+    "react-calendar-timeline": "^0.30.0-beta.5",
     "react-dom": "^18.3.1",
     "react-toastify": "^10.0.6",
+    "recharts": "^2.14.1",
     "tsup": "^8.3.0",
     "typescript": "^5.6.3",
     "zustand": "^4.5.4"

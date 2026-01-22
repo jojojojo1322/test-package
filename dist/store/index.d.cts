@@ -2,6 +2,7 @@ import * as react_jsx_runtime from 'react/jsx-runtime';
 import { PropsWithChildren } from 'react';
 import { ToastContainerProps, ToastOptions } from 'react-toastify';
 import * as zustand from 'zustand';
+export { a as ModalPayload, M as ModalStoreState, u as useModalStore } from '../modalStore-CXfcMgnp.cjs';
 
 type ToastProviderProps = PropsWithChildren<{
     containerProps?: ToastContainerProps;
@@ -39,18 +40,4 @@ declare const useToast: () => {
     clear: () => void;
 };
 
-interface ModalPayload<T extends Record<string, unknown> = Record<string, unknown>> {
-    id: string;
-    type: string;
-    props?: T;
-}
-interface ModalStoreState<T extends Record<string, unknown> = Record<string, unknown>> {
-    current: ModalPayload<T> | null;
-    open: (payload: Omit<ModalPayload<T>, "id"> & {
-        id?: string;
-    }) => string;
-    close: () => void;
-}
-declare const useModalStore: zustand.UseBoundStore<zustand.StoreApi<ModalStoreState<Record<string, unknown>>>>;
-
-export { type ModalPayload, type ModalStoreState, type ToastInput, type ToastPayload, ToastProvider, type ToastProviderProps, type ToastStoreState, type ToastVariant, useModalStore, useToast, useToastStore };
+export { type ToastInput, type ToastPayload, ToastProvider, type ToastProviderProps, type ToastStoreState, type ToastVariant, useToast, useToastStore };
