@@ -1,0 +1,10 @@
+.cursor
+node_modules
+dist
+yarn.lock
+package-lock.json
+pnpm-lock.yaml
+bun.lockb
+bun.lock
+.DS_Store
+./node_modules
