@@ -1,8 +1,8 @@
 export { createApiClient } from "./client";
 export { createInMemoryTokenManager } from "./tokenManager";
 export type {
-  ApiClientOptions,
-  TokenManager,
-  InMemoryTokenManagerOptions,
-  ManagedAxiosInstance,
+	ApiClientOptions,
+	InMemoryTokenManagerOptions,
+	ManagedAxiosInstance,
+	TokenManager,
 } from "./types";
