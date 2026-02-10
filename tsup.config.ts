@@ -12,6 +12,7 @@ export default defineConfig({
     "chart/index": "src/chart/index.ts",
     "modal/index": "src/modal/index.ts",
     "providers/index": "src/providers/index.ts",
+		"excel/index": "src/excel/index.ts",
   },
   format: ["esm", "cjs"],
   sourcemap: true,
@@ -37,5 +38,6 @@ export default defineConfig({
     "recharts",
     "dayjs",
     "react-calendar-timeline",
+		"xlsx",
   ],
 });

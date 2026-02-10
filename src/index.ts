@@ -7,3 +7,4 @@ export * from "./calendar";
 export * from "./timeline";
 export * from "./chart";
 export * from "./providers";
+export * from "./excel";
